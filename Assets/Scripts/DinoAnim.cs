@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class DinoAnim : MonoBehaviour
 {
-    [SerializeField] private DinoMover _dinoMover;
-    [SerializeField] private Animator _anim;
+    [SerializeField] 
+    private DinoMover _dinoMover;
+    [SerializeField] 
+    private Animator _anim;
     private float animSpeed = 1f;
     public float AnimSpeed { get { return animSpeed; } set { animSpeed = value; } }
     void Update()

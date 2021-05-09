@@ -15,11 +15,11 @@ D:/Projects/Unity Projects/Chrome T-Rex Runner
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50604
+50356
 Successfully changed project path to: D:/Projects/Unity Projects/Chrome T-Rex Runner
 D:/Projects/Unity Projects/Chrome T-Rex Runner
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.16 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.16 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,122 +35,567 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000767 seconds.
+Registered in 0.000788 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.71 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.94 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.744 seconds
+- Completed reload, in  0.775 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000748 seconds.
+Registered in 0.000946 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.00 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.21 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.788 seconds
+- Completed reload, in  0.786 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.0 MB.
 System memory in use after: 84.9 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2254.
-Total: 2.683000 ms (FindLiveObjects: 0.353300 ms CreateObjectMapping: 0.076200 ms MarkObjects: 2.120400 ms  DeleteObjects: 0.131200 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2255.
+Total: 3.135300 ms (FindLiveObjects: 0.255100 ms CreateObjectMapping: 0.051500 ms MarkObjects: 2.693300 ms  DeleteObjects: 0.133300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66f872e442e952d6fbae1db76bfe09e') in 0.049298 seconds
-  Import took 0.053046 seconds .
+  path: Assets/Scripts/CactusSpawner.cs
+  artifactKey: Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CactusSpawner.cs using Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f509b78732828dfdafe7426e4be3f2') in 0.054700 seconds
+  Import took 0.058545 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000824 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 84.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2259.
+Total: 2.179200 ms (FindLiveObjects: 0.314700 ms CreateObjectMapping: 0.058900 ms MarkObjects: 1.691600 ms  DeleteObjects: 0.111700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001004 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2263.
+Total: 2.187100 ms (FindLiveObjects: 0.378000 ms CreateObjectMapping: 0.050300 ms MarkObjects: 1.635000 ms  DeleteObjects: 0.121800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.747294 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad832bbdcf7c64b5d3c9cdfca6213f03') in 0.055931 seconds
-  Import took 0.059066 seconds .
+  Time since last request: 117.910552 seconds.
+  path: Assets/Scripts/CactusSpawner.cs
+  artifactKey: Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CactusSpawner.cs using Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8df68e07e06a42fb6dc404524cb36b') in 0.004755 seconds
+  Import took 0.008536 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.259475 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ce7de68a8b2b4e056495e3a60e4966') in 0.024575 seconds
-  Import took 0.028014 seconds .
+  Time since last request: 6.611802 seconds.
+  path: Assets/Scripts/Cactus.cs
+  artifactKey: Guid(ffec5e54de8cece41a624f57507651d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Cactus.cs using Guid(ffec5e54de8cece41a624f57507651d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b571314166dcb47becd04ef7dcfa913') in 0.006949 seconds
+  Import took 0.010940 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000718 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.765 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2268.
+Total: 2.216900 ms (FindLiveObjects: 0.261400 ms CreateObjectMapping: 0.085500 ms MarkObjects: 1.750500 ms  DeleteObjects: 0.118200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.734 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2272.
+Total: 2.725900 ms (FindLiveObjects: 0.268800 ms CreateObjectMapping: 0.114000 ms MarkObjects: 2.222100 ms  DeleteObjects: 0.119100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000741 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.704 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2276.
+Total: 2.046500 ms (FindLiveObjects: 0.272100 ms CreateObjectMapping: 0.091000 ms MarkObjects: 1.569200 ms  DeleteObjects: 0.112500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.703879 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d140c8528d14788b6d06bb20a42acc8') in 0.008628 seconds
-  Import took 0.012960 seconds .
+  Time since last request: 288.060322 seconds.
+  path: Assets/Scripts/Cactus.cs
+  artifactKey: Guid(ffec5e54de8cece41a624f57507651d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Cactus.cs using Guid(ffec5e54de8cece41a624f57507651d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56e3d1dbbe0d6219738956b4b6a9992') in 0.006631 seconds
+  Import took 0.016426 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000728 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.681 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2280.
+Total: 2.125200 ms (FindLiveObjects: 0.333000 ms CreateObjectMapping: 0.058900 ms MarkObjects: 1.608100 ms  DeleteObjects: 0.123600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.413368 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dac37d8851fdec4660b3889399d7690') in 0.008212 seconds
-  Import took 0.011931 seconds .
+  Time since last request: 66.561537 seconds.
+  path: Assets/Scripts/CactusSpawner.cs
+  artifactKey: Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CactusSpawner.cs using Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a6c82e75d678b5bff44b13666f6941') in 0.004761 seconds
+  Import took 0.008035 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.276043 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2d9541bd378c0907cefea4c18e0cd1') in 0.011506 seconds
-  Import took 0.015097 seconds .
+  Time since last request: 0.023710 seconds.
+  path: Assets/Scripts/CactusSpawner.cs
+  artifactKey: Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CactusSpawner.cs using Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a6c82e75d678b5bff44b13666f6941') in 0.002411 seconds
+  Import took 0.005351 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001042 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.683 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2284.
+Total: 2.480000 ms (FindLiveObjects: 0.255300 ms CreateObjectMapping: 0.051600 ms MarkObjects: 2.061900 ms  DeleteObjects: 0.110100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.118997 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1648d2a47051f3fe336a79430708f5c') in 0.007966 seconds
-  Import took 0.011638 seconds .
+  Time since last request: 304.816301 seconds.
+  path: Assets/Scripts/CactusSpawner.cs
+  artifactKey: Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CactusSpawner.cs using Guid(821a9d0a9eac32a4ca5824836ae60949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13f23f9e2aa0e6caa33e33f54bedc3a') in 0.007968 seconds
+  Import took 0.017397 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2288.
+Total: 2.121700 ms (FindLiveObjects: 0.220700 ms CreateObjectMapping: 0.045700 ms MarkObjects: 1.728000 ms  DeleteObjects: 0.125800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.687 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2292.
+Total: 2.489400 ms (FindLiveObjects: 0.283200 ms CreateObjectMapping: 0.125800 ms MarkObjects: 1.964700 ms  DeleteObjects: 0.114300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.510822 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75af17ea987323ccdd4ac6947ba35988') in 0.010571 seconds
-  Import took 0.013907 seconds .
+  Time since last request: 411.082405 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be35322f6257a9f44561c54a47ec410') in 0.024064 seconds
+  Import took 0.027612 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000774 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.694 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2296.
+Total: 2.666300 ms (FindLiveObjects: 0.213600 ms CreateObjectMapping: 0.044700 ms MarkObjects: 2.292700 ms  DeleteObjects: 0.113900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.068753 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c271b632eab4f00fa6e09976a18b41a') in 0.009989 seconds
-  Import took 0.013711 seconds .
+  Time since last request: 36.730779 seconds.
+  path: Assets/Prefabs/Cactus1.prefab
+  artifactKey: Guid(3932fdf49b9da5e4888aa37b827290d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cactus1.prefab using Guid(3932fdf49b9da5e4888aa37b827290d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2975692aa127d51c74c5285e22f726') in 0.077637 seconds
+  Import took 0.081107 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000713 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.684 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 2.531400 ms (FindLiveObjects: 0.252500 ms CreateObjectMapping: 0.111700 ms MarkObjects: 2.059400 ms  DeleteObjects: 0.106300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.103247 seconds.
-  path: Assets/Prefabs/Cactus2.prefab
-  artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c16fc8a3433fffbea70b060ce1f198') in 0.008707 seconds
-  Import took 0.012093 seconds .
+  Time since last request: 84.836774 seconds.
+  path: Assets/Prefabs/Cactus1.prefab
+  artifactKey: Guid(3932fdf49b9da5e4888aa37b827290d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cactus1.prefab using Guid(3932fdf49b9da5e4888aa37b827290d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643d1075a5c430a98991e998c0d375aa') in 0.051916 seconds
+  Import took 0.055831 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000955 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.675 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2312.
+Total: 2.400500 ms (FindLiveObjects: 0.266100 ms CreateObjectMapping: 0.086200 ms MarkObjects: 1.930900 ms  DeleteObjects: 0.115700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.006360 seconds.
+  Time since last request: 25.136359 seconds.
   path: Assets/Prefabs/Cactus2.prefab
   artifactKey: Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec9bab157b2d14fe833c32c4c98c2f6') in 0.008424 seconds
-  Import took 0.012417 seconds .
+Start importing Assets/Prefabs/Cactus2.prefab using Guid(c21c8775a78634f478c1e1a17940724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4585b1602e6303cbaf23fddc408f16') in 0.053195 seconds
+  Import took 0.057117 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 3.082978 seconds.
+  path: Assets/Prefabs/Cactus3.prefab
+  artifactKey: Guid(ba13f61a97d602d4b855c014537eeed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cactus3.prefab using Guid(ba13f61a97d602d4b855c014537eeed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460165f960e6402362fba0a3acfcbd79') in 0.013784 seconds
+  Import took 0.017603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.214142 seconds.
+  path: Assets/Prefabs/Cactus4.prefab
+  artifactKey: Guid(83a88e6a92cd8de448268421db7e99ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cactus4.prefab using Guid(83a88e6a92cd8de448268421db7e99ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487809c3be4c0da9c1cfa5ad42674175') in 0.014021 seconds
+  Import took 0.017926 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000906 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.704 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2317.
+Total: 2.379200 ms (FindLiveObjects: 0.218900 ms CreateObjectMapping: 0.047800 ms MarkObjects: 1.981300 ms  DeleteObjects: 0.129600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.747086 seconds.
+  path: Assets/Prefabs/Cactus1.prefab
+  artifactKey: Guid(3932fdf49b9da5e4888aa37b827290d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cactus1.prefab using Guid(3932fdf49b9da5e4888aa37b827290d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ab15a4315e36034ca7868176e2c29e') in 0.050609 seconds
+  Import took 0.054342 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000763 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2322.
+Total: 2.535700 ms (FindLiveObjects: 0.303000 ms CreateObjectMapping: 0.116300 ms MarkObjects: 2.004500 ms  DeleteObjects: 0.110400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000858 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.683 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2325.
+Total: 2.360200 ms (FindLiveObjects: 0.312900 ms CreateObjectMapping: 0.113200 ms MarkObjects: 1.820300 ms  DeleteObjects: 0.112300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000821 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2329.
+Total: 2.266100 ms (FindLiveObjects: 0.294700 ms CreateObjectMapping: 0.085300 ms MarkObjects: 1.769900 ms  DeleteObjects: 0.114600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000711 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2333.
+Total: 2.135400 ms (FindLiveObjects: 0.251900 ms CreateObjectMapping: 0.087100 ms MarkObjects: 1.667900 ms  DeleteObjects: 0.127200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001211 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2337.
+Total: 2.169400 ms (FindLiveObjects: 0.336700 ms CreateObjectMapping: 0.096000 ms MarkObjects: 1.621900 ms  DeleteObjects: 0.113200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000742 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.690 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2341.
+Total: 3.615400 ms (FindLiveObjects: 0.322600 ms CreateObjectMapping: 0.114000 ms MarkObjects: 3.067700 ms  DeleteObjects: 0.109000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000744 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.675 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2345.
+Total: 2.379200 ms (FindLiveObjects: 0.356600 ms CreateObjectMapping: 0.116100 ms MarkObjects: 1.787100 ms  DeleteObjects: 0.117800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001027 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.684 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2349.
+Total: 2.166000 ms (FindLiveObjects: 0.352800 ms CreateObjectMapping: 0.079900 ms MarkObjects: 1.613500 ms  DeleteObjects: 0.118300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
