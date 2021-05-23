@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameScript : MonoBehaviour
 {
     [SerializeField] private int pointsPerMS = 10;
     [SerializeField] private Text scoreText;
     [SerializeField] private Text highScoreText;
+    [SerializeField] GameObject restartButton;
     private int score;
     private int highScore;
     private bool gameStopped;
@@ -16,11 +18,12 @@ public class GameScript : MonoBehaviour
 
     private void Start()
     {
+        restartButton.SetActive(false);
         if (instance == null)
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
-
+        Time.timeScale = 1f;
         InvokeRepeating("AddScore", 0, 0.1f);
         highScore = PlayerPrefs.GetInt("HI ", 0);
         scoreText.text = "0";
@@ -39,6 +42,7 @@ public class GameScript : MonoBehaviour
     {
         Time.timeScale = 0;
         gameStopped = true;
+        restartButton.SetActive(true);
     }
     private void AddScore()
     {
@@ -60,5 +64,9 @@ public class GameScript : MonoBehaviour
     {
         nextBoost = Time.unscaledTime + timeToBoost;
         Time.timeScale += boost;
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
