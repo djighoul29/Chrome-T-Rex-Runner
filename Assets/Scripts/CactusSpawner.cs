@@ -11,12 +11,10 @@ public class CactusSpawner : MonoBehaviour
 	[SerializeField]
 	float spawnRate = 2f;
 	private float nextSpawn;
-	private float speed = 15f;
 	void Update()
 	{
-		transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
-		if (transform.position.x < -13f)
-			Destroy(gameObject);
+		if (Time.time > nextSpawn)
+			SpawnObstacle();
 	}
 	void SpawnObstacle()
 	{
