@@ -598,6 +598,8 @@ MonoBehaviour:
   pointsPerMS: 10
   scoreText: {fileID: 727358218}
   highScoreText: {fileID: 381686251}
+  timeToBoost: 10
+  boost: 0.02
 --- !u!4 &576393658
 Transform:
   m_ObjectHideFlags: 0
