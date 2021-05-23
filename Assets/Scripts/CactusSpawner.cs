@@ -22,7 +22,6 @@ public class CactusSpawner : MonoBehaviour
 	void SpawnObstacle()
 	{
 		nextSpawn = Time.time + spawnRate;
-		Debug.Log(nextSpawn);
 		int randomObstacle = Random.Range(0, obstacles.Length);
 		Instantiate(obstacles[randomObstacle], spawnPoint.position, Quaternion.identity);
 	}
