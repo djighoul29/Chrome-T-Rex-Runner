@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class CactusMover : MonoBehaviour
 {
-    //[SerializeField]
+    [SerializeField]
+    GameObject Dino;
     private float speed = -15f;
     void Update()
     {
         transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
         if (transform.position.x < -13f)
             Destroy(gameObject);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Equals("Dino"))
+            GameScript.instance.DinoHit();
+            // Debug.Log("Cactus hitted Dino!");
     }
 }
