@@ -7,7 +7,7 @@ public class DinoAnim : MonoBehaviour
     [SerializeField] 
     private Animator _anim;
     private float animSpeed = 1f;
-    public float AnimSpeed { get { return animSpeed; } set { animSpeed = value; } }
+    public float AnimSpeed { get { return animSpeed; } }
     void Update()
     {
         if (transform.position.y >= _dinoMover.PosY)

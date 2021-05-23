@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class GroundMover : MonoBehaviour
 {
-    [SerializeField] private int speed = 15;
-    [SerializeField] private float leftPoint = -23;
-    [SerializeField] private float rightPoint = 24.614f;
+    [SerializeField] 
+    private float speed = 15f;
+    [SerializeField] 
+    private float leftPoint = -23;
+    [SerializeField] 
+    private float rightPoint = 24.614f;
 
     private void Update()
     {
