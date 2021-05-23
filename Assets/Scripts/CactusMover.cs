@@ -6,9 +6,7 @@ public class CactusMover : MonoBehaviour
     [SerializeField] private float speed = -15f;
     private void Update()
     {
-        //speed += GameScript.instance.Speed * -1;
-        //Debug.Log(speed);
-        transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
+        transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
         if (transform.position.x < -13f)
             Destroy(gameObject);
     }
