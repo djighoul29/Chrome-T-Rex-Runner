@@ -15,6 +15,9 @@ public class GameScript : MonoBehaviour
     [SerializeField] private float boost = 0.020f;
     private float nextBoost;
     public static GameScript instance = null;
+    //private AudioClip clickSound; 
+    private AudioClip hitSound;
+    private AudioSource audioSrc;
 
     private void Start()
     {
@@ -28,6 +31,9 @@ public class GameScript : MonoBehaviour
         highScore = PlayerPrefs.GetInt("HI ", 0);
         scoreText.text = "0";
         gameStopped = false;
+        //clickSound = Resources.Load<AudioClip>("click");
+        hitSound = Resources.Load<AudioClip>("hit");
+        audioSrc = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -40,6 +46,7 @@ public class GameScript : MonoBehaviour
     }
     public void DinoHit()
     {
+        audioSrc.PlayOneShot(hitSound);
         Time.timeScale = 0;
         gameStopped = true;
         restartButton.SetActive(true);
@@ -67,6 +74,8 @@ public class GameScript : MonoBehaviour
     }
     public void RestartGame()
     {
+        //audioSrc.PlayOneShot(clickSound);
+        //Invoke(nameof(RestartGame), 0.1f);
         SceneManager.LoadScene("Game");
     }
 }

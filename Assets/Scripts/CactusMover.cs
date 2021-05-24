@@ -12,6 +12,8 @@ public class CactusMover : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Dino"))
+        {
             GameScript.instance.DinoHit();
+        }
     }
 }

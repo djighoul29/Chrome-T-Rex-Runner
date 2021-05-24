@@ -5,9 +5,13 @@ public class MenuScript : MonoBehaviour
 {
     [SerializeField] GameObject Ground1;
     [SerializeField] GameObject Ground2;
+    private AudioClip startSound;
+    private AudioSource audioSrc;
     private void Start()
     {
         Ground2.SetActive(false);
+        startSound = Resources.Load<AudioClip>("start");
+        audioSrc = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -17,6 +21,7 @@ public class MenuScript : MonoBehaviour
         {
             Ground1.SetActive(false);
             Ground2.SetActive(true);
+            audioSrc.PlayOneShot(startSound);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
