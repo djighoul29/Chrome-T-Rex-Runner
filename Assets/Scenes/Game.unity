@@ -749,6 +749,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &620160786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620160787}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620160787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620160786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.05, y: 2.04, z: -602.00146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &630609888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1771480671}
   - component: {fileID: 1771480670}
+  - component: {fileID: 1771480672}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1282,7 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821a9d0a9eac32a4ca5824836ae60949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacles:
+  cactuses:
   - {fileID: 8493100504487230497, guid: 3932fdf49b9da5e4888aa37b827290d2, type: 3}
   - {fileID: 8011497458202982770, guid: c21c8775a78634f478c1e1a17940724a, type: 3}
   - {fileID: 5566125899637631, guid: ba13f61a97d602d4b855c014537eeed4, type: 3}
@@ -1304,3 +1335,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771480672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771480669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb330ba0d27a7f44f9bb643374fb642b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ptero: {fileID: 4608117818919947685, guid: 3d9101e072845b24f85a349c20bbf3e3, type: 3}
+  spawnPoint: {fileID: 866283167}
+  spawnRateMin: 5
+  spawnRateMax: 8
