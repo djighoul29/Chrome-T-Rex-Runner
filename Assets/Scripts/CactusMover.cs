@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CactusMover : MonoBehaviour
 {
-    [SerializeField] GameObject Dino;
     [SerializeField] private float speed = -15f;
     private void Update()
     {
