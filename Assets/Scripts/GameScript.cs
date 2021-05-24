@@ -42,19 +42,23 @@ public class GameScript : MonoBehaviour
     {
         if (!gameStopped)
         {
-            scoreText.text = "" + score;
+            scoreText.text = "" + score; // Score counter
         }
-        if (Time.unscaledTime > nextBoost && !gameStopped)
+        if (Time.unscaledTime > nextBoost && !gameStopped) // booster
             BoostTime();
-        if (Input.GetKeyDown(KeyCode.M) && !PLAY)
+        if (Input.GetKeyDown(KeyCode.M) && !PLAY)     //
+        {                                             //
+            PLAY = true;                              //    
+            audioPlayer.SetActive(true);              //
+        }                                             //
+        else if (Input.GetKeyDown(KeyCode.M) && PLAY) //    BG music mute
+        {                                             //
+            PLAY = false;                             //
+            audioPlayer.SetActive(false);             //
+        }                                             //
+        if (gameStopped && Input.GetKeyDown(KeyCode.Z))
         {
-            PLAY = true;
-            audioPlayer.SetActive(true);
-        }
-        else if (Input.GetKeyDown(KeyCode.M) && PLAY)
-        {
-            PLAY = false;
-            audioPlayer.SetActive(false);
+            PlayerPrefs.SetInt("HI ", 0);
         }
     }
     public void DinoHit()
