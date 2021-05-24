@@ -8,6 +8,7 @@ public class GameScript : MonoBehaviour
     [SerializeField] private Text scoreText;
     [SerializeField] private Text highScoreText;
     [SerializeField] GameObject restartButton;
+    [SerializeField] GameObject audioPlayer;
     private int score;
     private int highScore;
     private bool gameStopped;
@@ -21,6 +22,7 @@ public class GameScript : MonoBehaviour
 
     private void Start()
     {
+        audioPlayer.SetActive(true);
         restartButton.SetActive(false);
         if (instance == null)
             instance = this;
@@ -50,6 +52,7 @@ public class GameScript : MonoBehaviour
         Time.timeScale = 0;
         gameStopped = true;
         restartButton.SetActive(true);
+        audioPlayer.SetActive(false);
     }
     private void AddScore()
     {
