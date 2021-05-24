@@ -15,8 +15,7 @@ public class GameScript : MonoBehaviour
     [SerializeField] private float timeToBoost = 10f;
     [SerializeField] private float boost = 0.03f;
     private float nextBoost;
-    public static GameScript instance = null;
-    //private AudioClip clickSound; 
+    public static GameScript instance = null; 
     private AudioClip hitSound;
     private AudioSource audioSrc;
     public static bool PLAY = true;
@@ -34,7 +33,6 @@ public class GameScript : MonoBehaviour
         highScore = PlayerPrefs.GetInt("HI ", 0);
         scoreText.text = "0";
         gameStopped = false;
-        //clickSound = Resources.Load<AudioClip>("click");
         hitSound = Resources.Load<AudioClip>("hit");
         audioSrc = GetComponent<AudioSource>();
     }
@@ -44,19 +42,22 @@ public class GameScript : MonoBehaviour
         {
             scoreText.text = "" + score; // Score counter
         }
+
         if (Time.unscaledTime > nextBoost && !gameStopped) // booster
             BoostTime();
-        if (Input.GetKeyDown(KeyCode.M) && !PLAY)     //
-        {                                             //
-            PLAY = true;                              //    
-            audioPlayer.SetActive(true);              //
-        }                                             //
-        else if (Input.GetKeyDown(KeyCode.M) && PLAY) //    BG music mute
-        {                                             //
-            PLAY = false;                             //
-            audioPlayer.SetActive(false);             //
-        }                                             //
-        if (gameStopped && Input.GetKeyDown(KeyCode.Z))
+
+        if (Input.GetKeyDown(KeyCode.M) && !PLAY)       // <- Mute music
+        {
+            PLAY = true;
+            audioPlayer.SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.M) && PLAY)
+        {
+            PLAY = false;
+            audioPlayer.SetActive(false);
+        }                                               // <-
+
+        if (gameStopped && Input.GetKeyDown(KeyCode.Z)) // Reset highscore
         {
             PlayerPrefs.SetInt("HI ", 0);
         }
@@ -92,8 +93,6 @@ public class GameScript : MonoBehaviour
     }
     public void RestartGame()
     {
-        //audioSrc.PlayOneShot(clickSound);
-        //Invoke(nameof(RestartGame), 0.1f);
         SceneManager.LoadScene("Game");
     }
 }

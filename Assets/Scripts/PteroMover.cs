@@ -11,7 +11,8 @@ public class PteroMover : MonoBehaviour
     }
     private void Update()
     {
-        transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, Random.Range(0.2f, 0.5f));
+        transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, 
+                                         Random.Range(0.2f, 0.5f));
         if (transform.position.x < -13f)
             Destroy(gameObject);
     }
