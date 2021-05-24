@@ -19,10 +19,11 @@ public class GameScript : MonoBehaviour
     //private AudioClip clickSound; 
     private AudioClip hitSound;
     private AudioSource audioSrc;
+    public static bool PLAY = true;
 
     private void Start()
     {
-        audioPlayer.SetActive(true);
+        audioPlayer.SetActive(PLAY);
         restartButton.SetActive(false);
         if (instance == null)
             instance = this;
@@ -45,6 +46,16 @@ public class GameScript : MonoBehaviour
         }
         if (Time.unscaledTime > nextBoost && !gameStopped)
             BoostTime();
+        if (Input.GetKeyDown(KeyCode.M) && !PLAY)
+        {
+            PLAY = true;
+            audioPlayer.SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.M) && PLAY)
+        {
+            PLAY = false;
+            audioPlayer.SetActive(false);
+        }
     }
     public void DinoHit()
     {

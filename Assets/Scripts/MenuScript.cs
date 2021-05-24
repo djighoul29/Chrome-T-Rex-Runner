@@ -23,6 +23,8 @@ public class MenuScript : MonoBehaviour
             Ground2.SetActive(true);
             audioSrc.PlayOneShot(startSound);
         }
+        if (Input.GetKeyDown(KeyCode.M))
+            GameScript.PLAY = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
