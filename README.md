@@ -1,5 +1,5 @@
 # Chrome T-Rex Runner
-[![](https://img.shields.io/badge/release-v0.10.1-brightgreen)](https://github.com/djighoul29/Chrome-T-Rex-Runner/releases)
+[![](https://img.shields.io/badge/release-v0.11-brightgreen)](https://github.com/djighoul29/Chrome-T-Rex-Runner/releases)
 ## About
 This is my first small 2D video-game made in Unity.
 ## Credits
