@@ -3,7 +3,12 @@ using UnityEngine;
 public class PteroMover : MonoBehaviour
 {
     [SerializeField] private float speed = -15f;
+    [SerializeField] private Animator anim;
 
+    private void Start()
+    {
+        anim.speed = 0.001f;
+    }
     private void Update()
     {
         transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, Random.Range(0.2f, 0.5f));

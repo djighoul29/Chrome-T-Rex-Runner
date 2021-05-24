@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -15
-  posY: 0.7
+  anim: {fileID: -788473345802230329}
 --- !u!1 &7789998115263434993
 GameObject:
   m_ObjectHideFlags: 0

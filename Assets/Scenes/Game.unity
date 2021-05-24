@@ -565,8 +565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5cd49badd2e8974cb5c8c6b705ae7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dinoMover: {fileID: 525271829}
-  _anim: {fileID: 525271826}
+  dinoMover: {fileID: 525271829}
+  anim: {fileID: 525271826}
 --- !u!1 &571729672
 GameObject:
   m_ObjectHideFlags: 0
