@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class PteroSpawner : MonoBehaviour
+public class CloudSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject Ptero;
+    [SerializeField] GameObject Cloud;
     [SerializeField] Transform spawnPoint;
-    [SerializeField] private float spawnRateMin = 5f;
+    [SerializeField] private float spawnRateMin = 3f;
     [SerializeField] private float spawnRateMax = 8f;
     private float spawnRate = 5f;
     private float nextSpawn = 5f;
@@ -13,11 +13,11 @@ public class PteroSpawner : MonoBehaviour
     {
         spawnRate = Random.Range(spawnRateMin, spawnRateMax);
         if (Time.time > nextSpawn)
-            SpawnPtero();
+            SpawnCloud();
     }
-    private void SpawnPtero()
+    private void SpawnCloud()
     {
         nextSpawn = Time.time + spawnRate;
-        Instantiate(Ptero, spawnPoint.position, Quaternion.identity);
+        Instantiate(Cloud, spawnPoint.position, Quaternion.identity);
     }
 }

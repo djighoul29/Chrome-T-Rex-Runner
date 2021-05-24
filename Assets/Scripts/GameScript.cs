@@ -12,7 +12,7 @@ public class GameScript : MonoBehaviour
     private int highScore;
     private bool gameStopped;
     [SerializeField] private float timeToBoost = 10f;
-    [SerializeField] private float boost = 0.020f;
+    [SerializeField] private float boost = 0.03f;
     private float nextBoost;
     public static GameScript instance = null;
     //private AudioClip clickSound; 

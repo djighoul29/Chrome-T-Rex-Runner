@@ -735,7 +735,7 @@ MonoBehaviour:
   highScoreText: {fileID: 381686251}
   restartButton: {fileID: 571729672}
   timeToBoost: 10
-  boost: 0.02
+  boost: 0.03
 --- !u!4 &576393658
 Transform:
   m_ObjectHideFlags: 0
@@ -846,36 +846,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &620160786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 620160787}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &620160787
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620160786}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.05, y: 2.04, z: -602.00146}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &630609888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866283166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.46, y: -3.4, z: -1}
+  m_LocalPosition: {x: 15.06, y: -3.4, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1391,6 +1361,7 @@ GameObject:
   - component: {fileID: 1771480671}
   - component: {fileID: 1771480670}
   - component: {fileID: 1771480672}
+  - component: {fileID: 1771480673}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1448,3 +1419,19 @@ MonoBehaviour:
   spawnPoint: {fileID: 866283167}
   spawnRateMin: 5
   spawnRateMax: 8
+--- !u!114 &1771480673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771480669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c10c084fbd2de14fba08148cf59af17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cloud: {fileID: 7496024474741743480, guid: 26a2548b9af25c8428fc706c0829772f, type: 3}
+  spawnPoint: {fileID: 866283167}
+  spawnRateMin: 0.5
+  spawnRateMax: 1.5
